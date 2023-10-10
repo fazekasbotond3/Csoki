@@ -1,0 +1,91 @@
+body{
+    font-family: cursive;
+}
+
+.container{
+    background-color: beige;
+    width: 78%;
+    margin: auto;
+    margin-top: -0.85%;
+
+}
+
+nav{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    align-items: center;
+    background-color: rgb(99, 22, 22);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: -1%;
+}
+
+nav h1{
+    float: left;
+    font-size: 1.5rem;
+    color: beige;
+    margin-left: 2%;
+}
+
+.container .navul{
+    display: none;
+    list-style-type: none;
+    float: right;
+    margin-top: 6%;
+    background-color: rgb(99, 22, 22);
+    padding: 2%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: 0;
+}
+
+.container .navul li{
+    padding: 2%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: beige;
+    text-align: center;
+    opacity: 80%;
+}
+
+.navul li:hover{
+    opacity: 100%;
+}
+
+.burger div{
+    width: 35px;
+    height: 3px;
+    background-color: beige;
+    margin: 6px 0;
+    border: 1px solid beige;
+    border-radius: 18px;
+    opacity: 80%;
+    transition: 0.5s;
+}
+
+.burger{
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-top: 1.4%;
+    margin-right: 3%;
+}
+
+.burger:hover div{
+    opacity: 100%;
+}
+
+.burger:hover{
+    border-radius: 12px;
+    background-color: rgba(245, 245, 220, 0.3);
+    animation-name: burgeranimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes burgeranimation{
+    from {transform:rotateY(0deg);}
+    to {transform:rotateY(360deg);}
+
+}

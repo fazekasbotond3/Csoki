@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Csokoládé fajták</title>
+</head>
+<body>
+    <nav>
+        <h1>
+            Csokoládé fajták
+        </h1>
+        <a href="javascript:void(0);" onclick="myFunction()">
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        </a>
+    </nav>
+    <div class="container">
+        <ul class="navul" id="myLinks">
+            <li>Történelem</li>
+            <li>Fajták</li>
+            <li>Galéria</li>
+            <li>Források</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, suscipit eius voluptates ipsa praesentium consectetur in doloribus labore iste qui nihil sapiente minima debitis voluptate cumque ad magni dicta. Odio.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam enim quia modi, tempora quod quos, unde est voluptatibus inventore, accusamus obcaecati nemo repudiandae quaerat maxime sint rerum. Repudiandae, dolorum molestias?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa blanditiis vitae laboriosam doloribus inventore magni eligendi quod exercitationem explicabo id facere beatae unde, corporis illum quia veritatis quidem! Animi, repellat!</p>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+
+</body>
+</html>
