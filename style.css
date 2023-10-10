@@ -1,12 +1,14 @@
 body{
     font-family: cursive;
+    background-image: url(dark-chocolate-bar-background-free-vector.jpg);
+    background-size: cover;
 }
 
 .container{
     background-color: beige;
-    width: 78%;
+    width: 76%;
     margin: auto;
-    margin-top: -0.85%;
+    padding: 0.8%;
 
 }
 
@@ -37,7 +39,7 @@ nav h1{
     padding: 2%;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    margin-top: 0;
+    margin-top: -2%;
 }
 
 .container .navul li{
@@ -47,10 +49,13 @@ nav h1{
     color: beige;
     text-align: center;
     opacity: 80%;
+    font-size: 1rem;
 }
 
 .navul li:hover{
     opacity: 100%;
+    font-size: 1.1rem;
+
 }
 
 .burger div{
@@ -80,12 +85,86 @@ nav h1{
     border-radius: 12px;
     background-color: rgba(245, 245, 220, 0.3);
     animation-name: burgeranimation;
-    animation-duration: 0.5s;
+    animation-duration: 0.2s;
     animation-iteration-count: 1;
+    animation-timing-function: linear;
 }
 
 @keyframes burgeranimation{
     from {transform:rotateY(0deg);}
     to {transform:rotateY(360deg);}
 
+}
+
+.icon{
+    height: 100px;
+    width: 100px;
+    float: right;
+    margin-right: 2%;
+    margin-top: -2%;
+    animation-name: iconanim;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes iconanim{
+    from {transform:rotateY(0deg);}
+    to {transform:rotateY(360deg);}
+}
+
+.kezdoszoveg{
+    font-size: large;
+    text-align: center;
+    justify-content: center;
+    padding: 3%;
+    width: 80%;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: #53280c;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 2px 2px 10px #53280c;
+    transition: all 1s ease-in-out;
+    text-align: center;
+    letter-spacing: 0.2em;
+    -webkit-animation: flicker 1s ease-in-out infinite alternate;
+    animation: flicker 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes flicker {
+    0% {
+        opacity: 0.5;
+        text-shadow: 2px 2px 10px #53280c;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 2px 2px 20px #53280c;
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.5;
+        text-shadow: 2px 2px 10px #53280c;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 2px 2px 20px #53280c;
+    }
+}
+
+h3{
+    color: rgb(99, 22, 22);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h4{
+    color: rgb(99, 22, 22);
 }
