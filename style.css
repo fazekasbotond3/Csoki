@@ -46,16 +46,16 @@ nav h1{
 .container .navul li{
     padding: 2%;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: unset;
     color: beige;
     text-align: center;
     opacity: 80%;
     font-size: 1rem;
 }
 
-.navul li:hover{
+.container .navul li:hover{
     opacity: 100%;
-    font-size: 1.1rem;
+
 
 }
 
@@ -86,7 +86,7 @@ nav h1{
     border-radius: 12px;
     background-color: rgba(245, 245, 220, 0.3);
     animation-name: burgeranimation;
-    animation-duration: 0.2s;
+    animation-duration: 0.3s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
 }
@@ -140,27 +140,7 @@ h2{
     font-size: 1.8rem;
 }
 
-@-webkit-keyframes flicker {
-    0% {
-        opacity: 0.5;
-        text-shadow: 2px 2px 10px #53280c;
-    }
-    100% {
-        opacity: 1;
-        text-shadow: 2px 2px 20px #53280c;
-    }
-}
 
-@keyframes flicker {
-    0% {
-        opacity: 0.5;
-        text-shadow: 2px 2px 10px #53280c;
-    }
-    100% {
-        opacity: 1;
-        text-shadow: 2px 2px 20px #53280c;
-    }
-}
 
 h3{
     color: rgb(99, 22, 22);
